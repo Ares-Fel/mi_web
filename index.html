@@ -1,51 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Página personal de Angel Flores">
-  <meta name="author" content="Angel Flores">
-  <title>Angel Flores</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: linear-gradient(135deg, #6a11cb, #2575fc);
-      color: white;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-
-    p {
-      font-size: 1.5em;
-      margin-top: 10px;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.9em;
-      color: rgba(255, 255, 255, 0.8);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Flores - Portafolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #0056b3;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .about {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .project {
+            background-color: white;
+            padding: 20px;
+            max-width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
-
 <body>
-  <div>
-    <h1>Angel Flores</h1>
-    <p>Bienvenido a mi página web</p>
-    <footer>&copy; 2024 Angel Flores. Todos los derechos reservados.</footer>
-  </div>
-</body>
 
+    <header>
+        <h1>Angel Flores</h1>
+        <p>Desarrollador | Diseñador | Entusiasta de la tecnología</p>
+    </header>
+
+    <nav>
+        <a href="#about">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <section id="about">
+        <div class="about">
+            <h2>Sobre mí</h2>
+            <p>¡Hola! Soy Angel Flores, un apasionado del desarrollo web y diseño. Me encanta crear soluciones elegantes y funcionales para problemas del mundo real. Este es mi portafolio donde podrás ver algunos de mis trabajos.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Mis Proyectos</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="assets/project1.png" alt="Proyecto 1">
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve de este proyecto interesante.</p>
+            </div>
+            <div class="project">
+                <img src="assets/project2.png" alt="Proyecto 2">
+                <h3>Proyecto 2</h3>
+                <p>Descripción breve de este proyecto asombroso.</p>
+            </div>
+            <div class="project">
+                <img src="assets/project3.png" alt="Proyecto 3">
+                <h3>Proyecto 3</h3>
+                <p>Descripción breve de este proyecto innovador.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o propuesta? ¡Contáctame en mis redes sociales o envíame un correo a <strong>angel.flores@email.com</strong>!</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Angel Flores. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
 </html>
